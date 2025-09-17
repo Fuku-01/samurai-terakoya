@@ -1,4 +1,4 @@
-fukushige@Mac ~ % cd /Users/fukushige/test             
+fukushige@Mac ~ % cd /Users/fukushige/test      
 fukushige@Mac test % mkdir git_challenge
 fukushige@Mac test % cd git_challenge
 fukushige@Mac git_challenge % git init
@@ -15,37 +15,49 @@ hint:   git branch -m <name>
 hint:
 hint: Disable this message with "git config set advice.defaultBranchName false"
 Initialized empty Git repository in /Users/fukushige/test/git_challenge/.git/
-fukushige@Mac git_challenge % echo ".DS_Store" >> .gitignore 
-fukushige@Mac git_challenge % echo "hello,  world\!" >> hello_world.txt
-fukushige@Mac git_challenge % git add hello_world.txt
-fukushige@Mac git_challenge % git commit -m "hello_world.txtを追加"
-[master (root-commit) de4c0bd] hello_world.txtを追加
- 1 file changed, 1 insertion(+)
- create mode 100644 hello_world.txt
-fukushige@Mac git_challenge % git status 
-On branch master
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .gitignore
-
-nothing added to commit but untracked files present (use "git add" to track)
+fukushige@Mac git_challenge % echo ".DS_Store" >> .gitignore
 fukushige@Mac git_challenge % git add .gitignore
-fukushige@Mac git_challenge % git commit -m .gitignore
-[master 7210db8] .gitignore
+fukushige@Mac git_challenge % git commit -m ".gitignoreを追加"
+[master (root-commit) 9ce1b35] .gitignoreを追加
  1 file changed, 1 insertion(+)
  create mode 100644 .gitignore
 fukushige@Mac git_challenge % git status
 On branch master
 nothing to commit, working tree clean
-fukushige@Mac git_challenge % echo "こんにちは、世界!" >> hello_world.txt
-dquote> 
-fukushige@Mac git_challenge % echo "こんにちは、世界\!" >> hello_world.txt
+fukushige@Mac git_challenge % echo "hello world\!" >> hello_world.txt
 fukushige@Mac git_challenge % git add hello_world.txt
-fukushige@Mac git_challenge % git commit -m "日本語訳を追加"
-[master 38472da] 日本語訳を追加
+fukushige@Mac git_challenge % git commit -m "hello_world.txtを追加"
+[master 96d1dcb] hello_world.txtを追加
  1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
 fukushige@Mac git_challenge % git status
 On branch master
 nothing to commit, working tree clean
-fukushige@Mac git_challenge % cd /Users/fukushige/test              
-fukushige@Mac test % mkdir kadai_005 
+fukushige@Mac git_challenge % echo "こんにちは、世界\!" >> hello_world.txt
+fukushige@Mac git_challenge % git add hello_world.txt
+fukushige@Mac git_challenge % git commit -m "日本語訳を追加"
+[master 39bf8e3] 日本語訳を追加
+ 1 file changed, 1 insertion(+)
+fukushige@Mac git_challenge % git log
+commit 39bf8e399da569bda2f96fa39a0196cd55d351d7 (HEAD -> master)
+Author: Fuku-o1 <ry.fukushige@gmail.com>
+Date:   Wed Sep 17 09:33:14 2025 +0900
+
+    日本語訳を追加
+
+commit 96d1dcb28928027e2ed5f78a60d8dcf31b6c12ea
+Author: Fuku-o1 <ry.fukushige@gmail.com>
+Date:   Wed Sep 17 09:31:43 2025 +0900
+
+    hello_world.txtを追加
+
+commit 9ce1b3511e5bd687d2b69d2b9d0508d281a13617
+Author: Fuku-o1 <ry.fukushige@gmail.com>
+Date:   Wed Sep 17 09:29:54 2025 +0900
+
+    .gitignoreを追加
+fukushige@Mac git_challenge % git status
+On branch master
+nothing to commit, working tree clean
+fukushige@Mac git_challenge % cd /Users/fukushige/test        
+fukushige@Mac test % mkdir kadai_005
